@@ -1,0 +1,3 @@
+schema	id	title	description	license	see_also	default_prefix
+> schema	id	title	description	license	see_also	default_prefix
+sheets-for-person-schema	https://w3id.org/turbomam/sheets-for-person-schema	sheets-for-person-schema	Files for schemasheets exercises at ICBO 2022	MIT	https://turbomam.github.io/sheets-for-person-schema	sheets_for_person_schema

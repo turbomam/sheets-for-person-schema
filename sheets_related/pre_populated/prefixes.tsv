@@ -1,0 +1,7 @@
+prefix	URI
+> prefix	prefix_reference
+sheets_for_person_schema	https://w3id.org/turbomam/sheets-for-person-schema/
+biolink	https://w3id.org/biolink/
+schema	http://schema.org/
+PATO	http://purl.obolibrary.org/obo/PATO_
+example	https://example.org/
