@@ -85,6 +85,9 @@ gen-examples:
 # todo if cruft/cookiecutter is to update this Makefile, then these edits won't persist
 # todo doesn't seem to bootstrap the .git... user needs to create a new repo on their own
 # todo pyproject.toml doesn't inherit description from about.yaml
+# todo need to explicitly add .github
+# add [tool.poetry.extras]
+      # docs = ["linkml", "mkdocs-material"]
 gen-project: $(PYMODEL)
 	$(RUN) gen-project -d $(DEST) $(SOURCE_SCHEMA_PATH) && mv $(DEST)/*.py $(PYMODEL)
 

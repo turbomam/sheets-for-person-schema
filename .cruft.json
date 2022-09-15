@@ -1,0 +1,28 @@
+{
+  "template": "https://github.com/linkml/linkml-project-cookiecutter",
+  "commit": "307dec72491c789f18916388afefa2998193e53b",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "sheets-for-person-schema",
+      "__project_slug": "sheets_for_person_schema",
+      "github_org": "turbomam",
+      "__source_path": "src/sheets_for_person_schema/schema/sheets_for_person_schema.yaml",
+      "project_description": "Files for schemasheets exercises at ICBO 2022",
+      "full_name": "Mark Andrew Miller",
+      "email": "mam@lbl.gov",
+      "__author": "Mark Andrew Miller <mam@lbl.gov>",
+      "license": "MIT",
+      "google_analytics_gtag": "G-2SYBSJVZ23",
+      "main_schema_class": "Person",
+      "create_python_classes": "Yes",
+      "use_schemasheets": "No (next two questions are ignored)",
+      "google_sheet_id": "1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ",
+      "google_sheet_tabs": "personinfo enums",
+      "__google_sheet_module": "personinfo_enums",
+      "github_token_for_pypi_deployment": "PYPI_PASSWORD (leave blank if not a python project)",
+      "_template": "https://github.com/linkml/linkml-project-cookiecutter"
+    }
+  },
+  "directory": null
+}
