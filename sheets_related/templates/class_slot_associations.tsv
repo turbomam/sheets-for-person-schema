@@ -1,2 +1,3 @@
-class	slot	domain_of	pattern
-> class	slot	domain_of	pattern
+class	slot	pattern	range	identifier	inlined	multivalued	inlined_as_list	maximum_value	minimum_value	mixin	mixins	domain_of	in_subset	required
+> class	slot	pattern	range	identifier	inlined	multivalued	inlined_as_list	maximum_value	minimum_value	mixin	mixins	domain_of	in_subset	required
+>											"internal_separator: ""|"""	"internal_separator: ""|"""	"internal_separator: ""|"""	""

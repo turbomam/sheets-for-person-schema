@@ -1,2 +1,3 @@
-class	description	class_uri	is_a	tree_root
-> class	description	class_uri	is_a	tree_root
+class	description	class_uri	is_a	tree_root	close_mappings	mixin	mixins
+> class	description	class_uri	is_a	tree_root	close_mappings	mixin	mixins
+>							"internal_separator: ""|"""

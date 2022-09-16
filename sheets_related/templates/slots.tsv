@@ -1,2 +1,3 @@
-slot	description	range	slot_uri	identifier	domain_of	pattern
-> slot	> description	range	slot_uri	identifier	domain_of	pattern
+slot	description	range	slot_uri	identifier	pattern	inlined	multivalued	inlined_as_list	maximum_value	minimum_value	mixin	mixins	domain_of	in_subset	required
+> slot	description	range	slot_uri	identifier	pattern	inlined	multivalued	inlined_as_list	maximum_value	minimum_value	mixin	mixins	domain_of	in_subset	required
+>												"internal_separator: ""|"""	"internal_separator: ""|"""	"internal_separator: ""|"""	""

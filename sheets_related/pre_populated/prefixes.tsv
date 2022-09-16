@@ -1,7 +1,13 @@
 prefix	URI
 > prefix	prefix_reference
-sheets_for_person_schema	https://w3id.org/turbomam/sheets-for-person-schema/
-biolink	https://w3id.org/biolink/
 schema	http://schema.org/
-PATO	http://purl.obolibrary.org/obo/PATO_
-example	https://example.org/
+prov	http://www.w3.org/ns/prov#
+schema	http://schema.org/
+personinfo	https://w3id.org/linkml/examples/personinfo/
+CODE	http://example.org/code/
+GEO	http://example.org/geoloc/
+GSSO	http://purl.obolibrary.org/obo/GSSO_
+P	http://example.org/P/
+ROR	http://example.org/ror/
+famrel	https://example.org/FamilialRelations#
+rdfs	http://www.w3.org/2000/01/rdf-schema#

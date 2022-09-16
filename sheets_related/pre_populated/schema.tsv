@@ -1,3 +1,4 @@
-schema	id	title	description	license	see_also	default_prefix
-> schema	id	title	description	license	see_also	default_prefix
-sheets-for-person-schema	https://w3id.org/turbomam/sheets-for-person-schema	sheets-for-person-schema	Files for schemasheets exercises at ICBO 2022	MIT	https://turbomam.github.io/sheets-for-person-schema	sheets_for_person_schema
+schema	id	title	description	license	see_also	default_prefix	emit_prefixes	default_curi_maps
+> schema	id	title	description	license	see_also	default_prefix	emit_prefixes	default_curi_maps
+>							"internal_separator: ""|"""	
+personinfo	https://w3id.org/linkml/examples/personinfo		Information about people, based on [schema.org](http://schema.org)	https://creativecommons.org/publicdomain/zero/1.0/	""	personinfo	rdf|rdfs|xsd|skos	semweb_context
