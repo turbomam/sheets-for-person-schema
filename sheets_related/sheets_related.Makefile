@@ -20,12 +20,13 @@ schema_diff \
 validate_with_reference \
 validate_with_roundtrip
 
-all: multiclean validate_with_reference schema_diff
+all: multiclean validate_with_reference schema_diff validate_with_roundtrip
 
 clean-%:
-	rm -rf output_%/*%
-	mkdir -p output_%
-	echo $(PLACEHOLDER_TEXT) > output_%/placeholder.txt
+	echo $(subst clean-,,$@)
+	rm -rf output_$(subst clean-,,$@)/*$(subst clean-,,$@)
+	mkdir -p output_$(subst clean-,,$@)
+	echo $(PLACEHOLDER_TEXT) > output_$(subst clean-,,$@)/placeholder.txt
 
 multiclean: \
 clean-tsv \
@@ -75,14 +76,14 @@ output_yaml/regenerated_reference.yaml: $(SCHEMA_SOURCE)
 schema_diff: output_yaml/roundtrip.yaml output_yaml/regenerated_reference.yaml
 	- jd -color --yaml $^
 
-validate_with_reference:
+validate_with_reference: $(SCHEMA_SOURCE)
 	$(RUN) linkml-validate \
-		--schema $(SCHEMA_SOURCE) \
+		--schema $< \
 		--target-class Container  $(SAMPLE_DATA)
 
-validate_with_roundtrip:
+validate_with_roundtrip: output_yaml/roundtrip.yaml
 	$(RUN) linkml-validate \
-		--schema output_yaml/roundtrip.yaml \
+		--schema $< \
 		--target-class Container  $(SAMPLE_DATA)
 
 #  poetry run gen-linkml --help
